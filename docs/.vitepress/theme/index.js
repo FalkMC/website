@@ -3,32 +3,25 @@ import './custom.css'
 
 export default {
   extends: DefaultTheme,
-  setup() {
-    import('vue').then(({ onMounted, nextTick }) => {
-      onMounted(() => {
-        const toggleFAQ = function(e) {
-          const item = this.parentElement
-          if (item) {
-            item.classList.toggle('open')
-          }
-        }
+  enhanceApp({ router }) {
+    if (typeof window === 'undefined') return
 
-        const attachFAQListeners = () => {
-          document.querySelectorAll('.faq-q').forEach((q) => {
-            q.removeEventListener('click', toggleFAQ)
-            q.addEventListener('click', toggleFAQ)
-          })
-        }
+    const toggleFAQ = function(e) {
+      const item = this.parentElement
+      if (item) {
+        item.classList.toggle('open')
+      }
+    }
 
-        attachFAQListeners()
-
-        const observer = new MutationObserver(() => {
-          if (document.querySelector('.faq-q')) {
-            attachFAQListeners()
-          }
-        })
-        observer.observe(document.body, { childList: true, subtree: true })
+    const attachFAQListeners = () => {
+      document.querySelectorAll('.faq-q').forEach((q) => {
+        q.removeEventListener('click', toggleFAQ)
+        q.addEventListener('click', toggleFAQ)
       })
-    })
+    }
+
+    document.addEventListener('DOMContentLoaded', attachFAQListeners)
+
+    router.onAfterRouteChanged = attachFAQListeners
   }
 }

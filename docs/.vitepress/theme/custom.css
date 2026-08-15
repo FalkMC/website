@@ -78,6 +78,14 @@
 }
 
 /* ===== HEADER LOGO ===== */
+.VPNavBarTitle .VPLink {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .VPNavBarTitle .VPLink .VPImage,
 .VPNavBarTitle .VPLink img,
 .VPNavBarTitle img,
@@ -91,18 +99,11 @@ img.VPImage {
   object-fit: contain !important;
 }
 
-.VPNavBarTitle .VPLink {
-  display: flex !important;
-  align-items: center !important;
-}
-
 .VPNavBarTitle .VPLink span {
-  font-size: 1.8rem !important;
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
   line-height: 1 !important;
-}
-
-span[data-v-55e263fd] {
-  margin-left: 10px !important;
 }
 
 /* ===== SIDEBAR ===== */
