@@ -81,7 +81,7 @@
 .VPNavBarTitle .VPLink {
   display: flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 0 !important;          /* we'll use margin-left on the text instead */
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -103,6 +103,7 @@ img.VPImage {
   font-size: 1.5rem !important;
   margin: 0 !important;
   padding: 0 !important;
+  margin-left: 12px !important;   /* ← forces space between logo and text */
   line-height: 1 !important;
 }
 
@@ -164,10 +165,6 @@ img.VPImage {
   background-color: var(--vp-c-bg);
   color: var(--vp-c-text-3);
 }
-
-/* ============================================
-   CUSTOM HOMEPAGE SECTIONS
-   ============================================ */
 
 .falkmc-hero {
   display: grid;
