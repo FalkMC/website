@@ -4,7 +4,7 @@ import './custom.css'
 export default {
   extends: DefaultTheme,
   setup() {
-    import('vue').then(({ onMounted }) => {
+    import('vue').then(({ onMounted, nextTick }) => {
       onMounted(() => {
         const toggleFAQ = function(e) {
           const item = this.parentElement
@@ -20,10 +20,8 @@ export default {
           })
         }
 
-        // Initial attachment
         attachFAQListeners()
 
-        // Re-attach after any DOM changes (e.g., navigation)
         const observer = new MutationObserver(() => {
           if (document.querySelector('.faq-q')) {
             attachFAQListeners()
