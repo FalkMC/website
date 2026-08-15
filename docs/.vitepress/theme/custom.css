@@ -1,0 +1,455 @@
+/* ============================================
+   FalkMC Panel – Clean Theme (fixed)
+   ============================================ */
+
+:root {
+  --vp-c-brand-1: #2FE6A6;
+  --vp-c-brand-2: #1C8F68;
+  --vp-c-brand-3: #57EDBB;
+  --vp-c-brand-soft: rgba(47, 230, 166, 0.12);
+
+  /* Light mode */
+  --vp-c-bg: #F2F3F4;
+  --vp-c-bg-soft: #FFFFFF;
+  --vp-c-bg-soft-up: #E8EAED;
+  --vp-c-bg-alt: #DEE0E3;
+  --vp-c-border: #D0D2D5;
+  --vp-c-divider: #D0D2D5;
+  --vp-c-gutter: #D0D2D5;
+  --vp-c-text-1: #1D1D1D;
+  --vp-c-text-2: #5C6268;
+  --vp-c-text-3: #8A9096;
+  --vp-code-block-bg: #F5F6F7;
+  --vp-code-line-highlight-color: rgba(47, 230, 166, 0.1);
+  --vp-code-color: var(--vp-c-brand-1);
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  --vp-nav-border-color: var(--vp-c-border);
+  --vp-sidebar-bg-color: var(--vp-c-bg-soft);
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-tagline-color: var(--vp-c-text-2);
+  --vp-home-feature-bg-color: var(--vp-c-bg-soft);
+  --vp-home-feature-border-color: var(--vp-c-border);
+}
+
+.dark {
+  --vp-c-bg: #0D0E10;
+  --vp-c-bg-soft: #17191C;
+  --vp-c-bg-soft-up: #1D2023;
+  --vp-c-bg-alt: #131517;
+  --vp-c-border: #2A2D31;
+  --vp-c-divider: #2A2D31;
+  --vp-c-gutter: #2A2D31;
+  --vp-c-text-1: #F2F3F4;
+  --vp-c-text-2: #9AA0A6;
+  --vp-c-text-3: #5C6268;
+  --vp-code-block-bg: #17191C;
+  --vp-code-line-highlight-color: rgba(47, 230, 166, 0.07);
+  --vp-code-color: var(--vp-c-brand-1);
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  --vp-nav-border-color: var(--vp-c-border);
+  --vp-sidebar-bg-color: var(--vp-c-bg-soft);
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-tagline-color: var(--vp-c-text-2);
+  --vp-home-feature-bg-color: var(--vp-c-bg-soft);
+  --vp-home-feature-border-color: var(--vp-c-border);
+}
+
+/* ===== Navbar – single border ===== */
+:root {
+  --vp-nav-border-color: transparent !important;
+  --vp-local-nav-border-color: transparent !important;
+}
+
+.VPNav,
+.VPNavBar,
+.VPNavBar *,
+.VPLocalNav,
+.VPLocalNav * {
+  border: none !important;
+  border-bottom: 0 solid transparent !important;
+  outline: none !important;
+}
+
+.VPNav {
+  border-bottom: 1px solid transparent !important;
+  transition: border-bottom-color 0.3s ease !important;
+}
+
+.VPNav:has(.scrolled) {
+  border-bottom-color: var(--vp-c-gutter) !important;
+}
+
+/* ===== HEADER LOGO ===== */
+.VPNavBarTitle .VPLink .VPImage,
+.VPNavBarTitle .VPLink img,
+.VPNavBarTitle img,
+img.VPImage {
+  height: 37px !important;
+  min-height: 37px !important;
+  max-height: 37px !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.VPNavBarTitle .VPLink {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.VPNavBarTitle .VPLink span {
+  font-size: 1.8rem !important;
+  line-height: 1 !important;
+}
+
+span[data-v-55e263fd] {
+  margin-left: 10px !important;
+}
+
+/* ===== SIDEBAR ===== */
+.VPSidebar {
+  background-color: var(--vp-c-bg-soft) !important;
+  border-right: 1px solid var(--vp-c-border) !important;
+}
+.VPSidebar .VPSidebarItem .VPLink.active {
+  color: var(--vp-c-brand-1);
+}
+.VPSidebar .VPSidebarItem .VPLink:hover {
+  color: var(--vp-c-text-1);
+}
+
+/* ===== HOME HERO ===== */
+.VPHomeHero .main .name { color: var(--vp-c-text-1); }
+.VPHomeHero .main .text { color: var(--vp-c-brand-1); }
+.VPHomeHero .main .tagline { color: var(--vp-c-text-2); }
+
+/* ===== FEATURES (default) ===== */
+.VPFeature {
+  background-color: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 12px !important;
+  transition: background 0.15s ease !important;
+}
+.VPFeature:hover { background-color: var(--vp-c-bg-soft-up) !important; }
+.VPFeature .icon {
+  background-color: rgba(47, 230, 166, 0.1) !important;
+  color: var(--vp-c-brand-1) !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+}
+.VPFeature .title { color: var(--vp-c-text-1) !important; }
+.VPFeature .details { color: var(--vp-c-text-2) !important; }
+
+/* ===== DOCUMENTATION ===== */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 { color: var(--vp-c-text-1); }
+.vp-doc p { color: var(--vp-c-text-2); }
+.vp-doc a { color: var(--vp-c-brand-1); }
+.vp-doc a:hover { color: var(--vp-c-brand-3); }
+.vp-doc strong { color: var(--vp-c-text-1); }
+.vp-doc div[class*="language-"] {
+  background-color: var(--vp-code-block-bg) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 10px !important;
+}
+.vp-doc div[class*="language-"] code { color: var(--vp-c-text-1); }
+
+/* ===== FOOTER ===== */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-3);
+}
+
+/* ============================================
+   CUSTOM HOMEPAGE SECTIONS
+   ============================================ */
+
+.falkmc-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+.falkmc-hero { border-bottom: none !important; }
+
+.hero-content .hero-title {
+  font-size: 3.2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  margin-bottom: 20px !important;
+  color: var(--vp-c-text-1);
+}
+.hero-content .hero-sub {
+  font-size: 1.25rem !important;
+  color: var(--vp-c-text-2);
+  max-width: 500px;
+  margin-bottom: 28px !important;
+  line-height: 1.6 !important;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px !important;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.hero-actions .btn {
+  padding: 16px 40px !important;
+  font-size: 1.15rem !important;
+  border-radius: 100px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-3);
+}
+.hero-meta .dot-sep { opacity: 0.5; }
+.hero-dash .dash-mockup {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-border);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+  .falkmc-hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-content .hero-title { font-size: 1.8rem; }
+}
+
+/* --- FEATURES (compact) --- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 8px 0 30px;
+}
+.feature-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: background 0.15s ease;
+  text-align: left;
+}
+.feature-card:hover { background: var(--vp-c-bg-soft-up); }
+.feature-card .feature-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(47, 230, 166, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--vp-c-brand-1);
+}
+.feature-card .feature-icon svg { stroke: currentColor; }
+.feature-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: var(--vp-c-text-1);
+}
+.feature-card p {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  margin: 0;
+}
+
+/* --- ROADMAP – compact, clean alignment --- */
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0 30px;
+}
+.road-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+}
+.road-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--vp-c-bg-soft);
+  border: 2px solid var(--vp-c-border);
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+.road-card.active .road-dot {
+  background: var(--vp-c-bg);
+  border-color: var(--vp-c-brand-1);
+}
+.road-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vp-c-text-3);
+  margin-bottom: 4px;
+}
+.road-card.active .road-status { color: var(--vp-c-brand-1); }
+.road-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--vp-c-text-1);
+  flex-shrink: 0;
+}
+.road-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.road-card li {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 3px;
+}
+/* No ::before rule – dashes removed from source */
+
+@media (max-width: 768px) {
+  .feature-grid, .roadmap { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .feature-grid, .roadmap { grid-template-columns: 1fr; }
+  .road-card { aspect-ratio: auto; }
+}
+
+/* --- FAQ --- */
+.faq {
+  margin: 24px 0 32px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+}
+.faq-item {
+  border-bottom: 1px solid var(--vp-c-border);
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  user-select: none;
+}
+.faq-q:hover { background: var(--vp-c-bg-soft-up); }
+.faq-q .plus {
+  font-size: 1.4rem;
+  color: var(--vp-c-text-3);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.faq-item.open .plus {
+  color: var(--vp-c-brand-1);
+  transform: rotate(45deg);
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+.faq-item.open .faq-a {
+  max-height: 500px;
+  padding: 16px 20px 20px 20px;
+}
+
+/* ============================================
+   BUTTONS – ROUNDED & ANIMATED (general)
+   ============================================ */
+
+.VPButton, .btn, .hero-actions .btn {
+  border-radius: 100px !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  padding: 12px 28px !important;
+  font-size: 1rem !important;
+  margin: 4px !important;
+  text-decoration: none !important;
+}
+.VPButton.brand, .hero-actions .btn-primary {
+  background: var(--vp-c-brand-1) !important;
+  color: #05261c !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(47, 230, 166, 0.25) !important;
+}
+.VPButton.brand:hover, .hero-actions .btn-primary:hover {
+  background: var(--vp-c-brand-3) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 8px 28px rgba(47, 230, 166, 0.35) !important;
+}
+.VPButton.alt, .hero-actions .btn-ghost {
+  background: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  color: var(--vp-c-text-1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+.VPButton.alt:hover, .hero-actions .btn-ghost:hover {
+  background: var(--vp-c-bg-soft-up) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+}
+.VPNavBar .VPNavBarActions .VPButton {
+  border-radius: 100px !important;
+  transition: all 0.25s ease !important;
+  padding: 8px 20px !important;
+  font-size: 0.9rem !important;
+}
+.VPNavBar .VPNavBarActions .VPButton:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(47, 230, 166, 0.3) !important;
+}
+
+/* ============================================
+   UTILITY – REMOVE DUPLICATE DIVIDERS
+   ============================================ */
+
+.falkmc-hero { border-bottom: none !important; }
+.roadmap::before { display: none !important; }
+.faq { margin-top: 0 !important; padding-top: 0 !important; }
+.header-anchor { display: none !important; }
+
+/* ============================================
+   REDUCE GAP BETWEEN HERO AND FEATURES
+   ============================================ */
+
+.falkmc-hero {
+  padding-bottom: 48px !important;
+}
+
+.falkmc-hero + h2 {
+  margin-top: 8px !important;
+}
