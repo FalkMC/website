@@ -434,3 +434,7 @@ img.VPImage {
 .falkmc-hero + h2 {
   margin-top: 8px !important;
 }
+
+span[data-v-55e263fd] {
+  margin-left: 8px !important;
+}
