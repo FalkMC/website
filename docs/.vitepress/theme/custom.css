@@ -117,6 +117,14 @@ img.VPImage {
   background-color: var(--vp-c-bg-soft) !important;
   border-right: 1px solid var(--vp-c-border) !important;
 }
+
+/* Add a divider above the first sidebar group ("Getting Started"),
+   matching the existing .group + .group divider style used between
+   later groups (e.g. Features / Support). */
+#VPSidebarNav.nav {
+  border-top: 1px solid var(--vp-c-divider) !important;
+  padding-top: 10px !important;
+}
 .VPSidebar .VPSidebarItem .VPLink.active {
   color: var(--vp-c-brand-1);
 }

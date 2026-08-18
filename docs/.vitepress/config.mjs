@@ -22,9 +22,8 @@ export default defineConfig({
     },
     nav: [
       { text: "Home", link: "/" },
-      { text: "Docs", link: "/docs/" },
-      { text: "GitHub", link: "https://github.com/FalkMC" },
-      { text: "Discord", link: "https://discord.gg/hUMUuFJfEK" }
+      { text: "Docs", link: "/docs/" }
+      // GitHub and Discord links removed; they're available as icons via socialLinks below
     ],
     sidebar: {
       '/docs/': [
