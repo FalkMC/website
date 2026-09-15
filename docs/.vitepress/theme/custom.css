@@ -315,6 +315,10 @@ img.VPImage {
   background: var(--vp-c-bg);
   border-color: var(--vp-c-brand-1);
 }
+.road-card.complete .road-dot {
+  background: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
 .road-status {
   font-size: 0.7rem;
   font-weight: 700;
@@ -324,6 +328,7 @@ img.VPImage {
   margin-bottom: 4px;
 }
 .road-card.active .road-status { color: var(--vp-c-brand-1); }
+.road-card.complete .road-status { color: var(--vp-c-brand-1); }
 .road-card h3 {
   font-size: 1rem;
   margin-bottom: 6px;

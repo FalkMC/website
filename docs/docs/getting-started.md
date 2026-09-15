@@ -2,33 +2,35 @@
 
 ## Step 1: Click "New Server"
 
-On the home screen, click the **+ New Server** button.
+On the Servers page, click the **+ New Server** button.
 
-## Step 2: Choose a type and version
+## Step 2: Fill in the details
 
-- **Vanilla** – the official Minecraft server (supports all versions).
-- **Paper** – optimised server with plugin support (coming soon).
+- **Server Name** – something you'll recognise, like "Survival World".
+- **Server Type** – **Vanilla** (official) or **Paper** (performance-optimised, plugin-ready).
+- **Version** – pick from the list (e.g. 1.21.1).
+- **RAM Allocation** – how much memory the server can use (1G, 2G, 4G, …).
+- **Max Players** – the maximum number of players allowed on the server.
 
-Pick the version you want (e.g., 1.21.1).
+## Step 3: Create
 
-## Step 3: Name your server
+Click **Create Server**. FalkMC downloads the server jar and sets up the folder structure, config files and EULA automatically.
 
-Give it a name that you'll recognise, "Survival World", "Creative Build", etc.
+## Step 4: Start
 
-## Step 4: Install
+Once the server appears in your list, click **Start**. The panel tracks the process and shows live status.
 
-Click **Install**, FalkMC will download the server jar and generate all necessary files.
+## Step 5: Connect
 
-## Step 5: Start
+Open Minecraft, add a server using `localhost:25565` (or your local IP from the server card) and join.
 
-Once installed, click **Start**, your server will launch in a few seconds.
-
-## Step 6: Connect
-
-Open Minecraft, add your server using `localhost:25565` (or your LAN IP), and join.
+Your server card shows:
+- Live **player count** and **max players**
+- **RAM allocation**
+- **Local and public IP** with one-click copy buttons
 
 ## Next steps
 
-- Adjust RAM allocation in **Settings**
-- Change the server MOTD, port, or gamemode
-- Set up automated backups
+- Adjust port, MOTD, difficulty and more in the server's **Settings** dialog
+- Change RAM allocation and display name per server
+- Read the [Server Management docs](/docs/features/server-management) for full details

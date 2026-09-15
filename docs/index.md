@@ -7,7 +7,7 @@ layout: home
     <h1 class="hero-title">
       <span class="type-text">Your server. <span style="color: var(--vp-c-brand-1); white-space: nowrap;">In under two minutes.</span></span>
     </h1>
-    <p class="hero-sub">FalkMC Panel installs the server, opens the right port, and gives you one dashboard for start/stop, RAM, and backups</p>
+    <p class="hero-sub">FalkMC Panel installs the server, opens the right port and gives you one dashboard for start/stop, RAM and backups</p>
     <div class="hero-actions">
       <a href="/docs/installation" class="btn btn-primary">Download</a>
       <a href="/#roadmap" class="btn btn-ghost">See what's coming</a>
@@ -33,7 +33,7 @@ layout: home
       <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
     </div>
     <h3>Server control</h3>
-    <p>Start, stop, and restart your server from one panel.</p>
+    <p>Start, stop and restart your server from one panel.</p>
   </div>
   <div class="feature-card">
     <div class="feature-icon">
@@ -47,16 +47,16 @@ layout: home
       <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
     </div>
     <h3>Settings editor</h3>
-    <p>Edit port, MOTD, difficulty, and more, right from the UI, no config files.</p>
+    <p>Edit port, MOTD, difficulty and more, right from the UI, no config files.</p>
   </div>
 </div>
 
 ## Roadmap
 
 <div class="roadmap">
-  <div class="road-card active">
+  <div class="road-card complete">
     <div class="road-dot"></div>
-    <div class="road-status">In progress</div>
+    <div class="road-status">Complete</div>
     <h3>Core Features</h3>
     <ul>
       <li>Server discovery &amp; controls</li>
@@ -64,9 +64,9 @@ layout: home
       <li>Server installation wizard</li>
     </ul>
   </div>
-  <div class="road-card">
+  <div class="road-card active">
     <div class="road-dot"></div>
-    <div class="road-status">Next</div>
+    <div class="road-status">In progress</div>
     <h3>Performance & Console</h3>
     <ul>
       <li>RAM &amp; performance monitoring</li>
@@ -86,11 +86,10 @@ layout: home
   </div>
   <div class="road-card">
     <div class="road-dot"></div>
-    <div class="road-status">Upcoming</div>
+    <div class="road-status">Planned</div>
     <h3>Release</h3>
     <ul>
       <li>Full QA &amp; code cleanup</li>
-      <li>Packaging &amp; distribution</li>
       <li>Public launch (v1.0)</li>
     </ul>
   </div>
@@ -101,31 +100,30 @@ layout: home
 <div class="faq">
   <div class="faq-item">
     <div class="faq-q" tabindex="0" role="button">
-      <span>Is FalkMC Panel really free forever?</span>
+      <span>Do I need to install anything besides FalkMC Panel?</span>
       <span class="plus">+</span>
     </div>
-    <div class="faq-a">Yes. There's no trial period or feature lockout timer, FalkMC Panel is open source and stays fully usable with no time limit.</div>
+    <div class="faq-a">Just Java 21 or higher. FalkMC detects it automatically and shows a download link if it's missing. Everything else, the server jar, config files and folder structure is set up by the panel.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q" tabindex="0" role="button">
-      <span>What platforms does it run on?</span>
+      <span>Where are my servers stored?</span>
       <span class="plus">+</span>
     </div>
-    <div class="faq-a">Windows 10 and 11. Most Minecraft server panels only support Linux, FalkMC Panel is built specifically for people running a server straight from their own Windows machine.</div>
+    <div class="faq-a">In <code>Documents\FalkMC\servers</code>. Each server gets its own folder with the world, config and logs.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q" tabindex="0" role="button">
-      <span>Which Minecraft versions are supported?</span>
+      <span>How do my friends connect to my server?</span>
       <span class="plus">+</span>
     </div>
-    <div class="faq-a">Vanilla is supported now. Paper is next on the roadmap, Fabric and Forge are planned for later.</div>
+    <div class="faq-a">They connect using your public IP and port, both of which are shown on each server card in the panel. For players outside your home network, you'll need to forward that port on your router, the Network roadmap phase will add tooling for this.</div>
   </div>
-    <div class="faq-item">
+  <div class="faq-item">
     <div class="faq-q" tabindex="0" role="button">
       <span>I found a bug, how do I report it?</span>
       <span class="plus">+</span>
     </div>
-    <div class="faq-a">Join the Discord and create a post in the bug-report channel with as much detail as possible: steps to reproduce, screenshots, and any error messages.
-</div>
+    <div class="faq-a">Join the Discord and post in the bug-report channel with steps to reproduce, screenshots and any error messages.</div>
   </div>
 </div>

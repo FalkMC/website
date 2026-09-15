@@ -1,33 +1,33 @@
 # Frequently Asked Questions
 
-## Is FalkMC Panel free forever?
+## Do I need to install anything besides FalkMC Panel?
 
-Yes. There's no trial period, no feature lockouts, it's MIT licensed and stays fully usable with no time limit.
+Just **Java 21 or higher**. The panel detects it automatically and shows a download link if it's missing. Everything else, the server jar, config files and folder structure is handled by the panel.
 
-## What platforms does it run on?
+## Where are my servers stored?
 
-Windows 10 and 11. Most server panels are Linux‑only, FalkMC is built specifically for Windows users who want to run a server straight from their own PC.
-
-## Which Minecraft versions are supported?
-
-Vanilla is supported now. Paper is next on the roadmap. Fabric and Forge are planned for later.
+In `Documents\FalkMC\servers`. Each server gets its own folder with the world, config and logs.
 
 ## Can I run multiple servers at once?
 
-Yes, each server runs in its own folder and process. You can start and stop them independently.
+Yes. Each server runs on its own port and uses its own RAM allocation. As long as your machine has enough resources, you can start as many as you want.
 
-## Where can I suggest a feature?
+## How do my friends connect to my server?
 
-Hop into the [Discord](https://discord.gg/hUMUuFJfEK) and create a post in the suggestions text channel. Community feedback directly shapes the roadmap.
+They connect using your **public IP** and **port**, both shown on each server card. For players outside your home network, you'll need to forward that port on your router.
 
-## Do I need to install Java?
+## What's the difference between Vanilla and Paper?
 
-Yes, FalkMC requires Java 17 or higher to launch servers. Download it from [Adoptium](https://adoptium.net/) or [Oracle](https://www.oracle.com/java/technologies/downloads/).
+**Vanilla** is the official Minecraft server, closest to the base game. **Paper** is a performance-optimised fork that also supports plugins. Both are supported in FalkMC Panel.
 
-## Will this work on Linux?
+## What happens to my servers when I close the panel?
 
-No, the panel is built for Windows. A Linux version may come later if there's demand.
+Running servers are shut down automatically when you close FalkMC Panel, so you never end up with Java processes running in the background.
+
+## Will this work on Linux or macOS?
+
+No, the panel is built specifically for Windows 10 and 11. However if there is demand then a macOS version might come.
 
 ## I found a bug, how do I report it?
 
-Join the [Discord](https://discord.gg/hUMUuFJfEK) and create a post in the bug-report channel with as much detail as possible: steps to reproduce, screenshots, and any error messages.
+Join the [Discord](https://discord.gg/hUMUuFJfEK) and post in the bug-report channel with steps to reproduce, screenshots and any error messages.
