@@ -65,7 +65,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Not affiliated with Mojang or Microsoft.',
-      copyright: '© 2026 FalkMC Panel'
+      copyright: 'Made with ❤️ in Sweden 🇸🇪'
     },
     appearance: 'dark'
   }
