@@ -2,7 +2,7 @@
 
 ## Download
 
-1. Go to the [releases page](https://github.com/FalkMC/panel/releases) and download the latest `FalkMC_v0.1.exe`.
+1. Go to the [releases page](https://github.com/FalkMC/panel/releases) and download the latest `FalkMC.exe`.
 
 ## Run
 
