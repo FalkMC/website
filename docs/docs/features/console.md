@@ -18,11 +18,11 @@ Type a command into the input field at the bottom and press **Enter** (or click 
 
 Common examples:
 
-- `list` – show currently online players
-- `say Hello everyone!` – broadcast a message to the server
-- `op PlayerName` – give a player operator status
-- `whitelist add PlayerName` – add someone to the whitelist
-- `stop` – gracefully shut down the server
+- `list` — show currently online players
+- `say Hello everyone!` — broadcast a message to the server
+- `op PlayerName` — give a player operator status
+- `whitelist add PlayerName` — add someone to the whitelist
+- `stop` — gracefully shut down the server
 
 Your typed command appears in the console with a `>` prefix so you can see what you sent.
 
@@ -32,12 +32,13 @@ When the selected server isn't running, the **Send** button greys out and the in
 
 ## Controls
 
-- **Auto-scroll** – when enabled, the console follows new output as it arrives. Turn this off to scroll back and read older entries without being jumped to the bottom.
-- **Clear** – wipes the current console text. The log file on disk is unaffected.
+- **Auto-scroll** — when enabled, the console follows new output as it arrives. Turn this off to scroll back and read older entries without being jumped to the bottom.
+- **Clear** — wipes the current console text. The log file on disk is unaffected.
 
 ## Where output is stored
 
-Each server keeps its own log at:
-Documents\FalkMC\servers<server name>\falkmc_console.log
+Each server keeps its own log inside its server folder, named `falkmc_console.log`. The full path is:
+Documents/FalkMC/servers/SERVER_NAME/falkmc_console.log
 
+Replace `SERVER_NAME` with the folder name of your server.
 The file is overwritten each time the server is started, so it only contains the current session.
