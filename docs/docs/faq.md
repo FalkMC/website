@@ -10,11 +10,17 @@ In `Documents\FalkMC\servers`. Each server gets its own folder with the world, c
 
 ## Can I run multiple servers at once?
 
-Yes. Each server runs on its own port and uses its own RAM allocation. As long as your machine has enough resources, you can start as many as you want.
+Yes, as long as each server uses a different port. Two servers can't share the same port, so set a unique port per server in its **Settings**. Beyond that, the only limit is your PC's resources.
 
 ## How do my friends connect to my server?
 
 They connect using your **public IP** and **port**, both shown on each server card. For players outside your home network, you'll need to forward that port on your router.
+
+## How do I run a command on my server?
+
+Go to the **Console** page, select your server from the dropdown, and type the command into the input at the bottom. Press **Enter** or click **Send**. The command is sent directly to the running server.
+
+If the server isn't running, the input is disabled — start it from the Servers page first.
 
 ## What's the difference between Vanilla and Paper?
 

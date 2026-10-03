@@ -7,6 +7,7 @@ FalkMC Panel is a free, open-source Minecraft server manager built for Windows. 
 - [Installation guide](/docs/installation)
 - [Your first server](/docs/getting-started)
 - [Feature overview](/docs/features/server-management)
+- [Console & commands](/docs/features/console)
 - [FAQ](/docs/faq)
 
 ## System requirements
