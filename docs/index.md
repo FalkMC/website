@@ -7,7 +7,7 @@ layout: home
     <h1 class="hero-title">
       <span class="type-text">Your server. <span style="color: var(--vp-c-brand-1); white-space: nowrap;">In under two minutes.</span></span>
     </h1>
-    <p class="hero-sub">FalkMC Panel installs the server, opens the right port and gives you one dashboard for start/stop, RAM and backups</p>
+    <p class="hero-sub">Self-host a Minecraft server with your friends from one desktop application. Built for Windows, made simple.</p>
     <div class="hero-actions">
       <a href="/docs/installation" class="btn btn-primary">Download</a>
       <a href="/#roadmap" class="btn btn-ghost">See what's coming</a>
